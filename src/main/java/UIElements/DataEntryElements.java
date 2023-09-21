@@ -23,7 +23,11 @@ public class DataEntryElements {
     public static By BoothLevel = By.xpath("//h5[contains(text(),'Booth')]/../../../..//button[contains(., 'Add Entry')]");
     //	Static xpath
     public static By ProfilIcon =By.xpath("//*[name()='path' and contains(@d,'M0 15C0 6.')]");
-    public static By AbhiyanCard = By.xpath("//mat-card-title[contains(text(),'Abhiyan Data Entry' )]");
+
+    public static By ProfileIconDropDown = By.xpath ("//mat-icon[contains(text(),'keyboard_arrow_down')]");
+    public static By ProfileButton = By.xpath("//button[contains(text(),' Profile')]");
+    public static By SignoutButton = By.xpath("//span[contains(text(),'Sign Out')]");
+    public static By AbhiyanCard = By.xpath("//mat-card-title[contains(text(),'Abhiyan Data Entry')]");
     public static By Role = By.xpath("//b[contains(text(),'Role:')]//parent::div");
 
     public static By datalevelverification =By.xpath("//h5");
@@ -31,13 +35,12 @@ public class DataEntryElements {
     public static By vibhag = By.xpath("//div[text()='Select Vibhag']");
     public static By unit = By.xpath("//div[text()='Select Organisation Unit']");
     public static By subUnit= By.xpath("//div[text()='Select Organisation Sub Unit']");
-    public static By dropdownOption = By.xpath("//div[@role='option'][1]");
+    public static By dropdownOption = By.xpath("(//div[@role='option'])[1]");
     public static By searchButton = By.xpath("//button//span[contains(text(),'Search')]");
     //For AutoFill enabled   public static By = By.xpath("");
     public static By PhonenumberBox= By.xpath("//div[@class='mat-form-field-infix ng-tns-c107-30']");
     public static By SearchButton = By.xpath("//button[@type='submit']");
     public static By AddEntry = By.xpath("//button[@class='mat-focus-indicator btn orange-btn zoom mat-raised-button mat-button-base']//span[@class='mat-button-wrapper' and contains(text(),' Add New ') ]");
-    //   public static By = By.xpath("");
     public static By name = By.xpath("//input[@placeholder='Name']");
     public static By Father= By.xpath("//input[@placeholder=\"Father's/Husband's Name\"]");
     public static By designation = By.xpath("//ng-select//div[@class='ng-placeholder'and contains(text(),'Select Designation *')]");

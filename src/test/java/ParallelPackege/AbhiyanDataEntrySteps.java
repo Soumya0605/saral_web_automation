@@ -52,14 +52,15 @@ public class AbhiyanDataEntrySteps {
 //
 	@Then("user gets the user name")
 	public void user_gets_the_user_name() throws InterruptedException {
-		homepage.ProfileSection();
+		homepage.ProfileSectionDropdown();
+		homepage.ProfileButton();
 	  
 	}
 
-	@When("user click on Abhiyan data entry")
-	public void user_click_on_abhiyan_data_entry()throws InterruptedException  {
+	@When("user click on Abhiyan Vibhag data entry")
+	public void user_click_on_Abhiyan_Vibhag_data_entry()throws InterruptedException  {
 		Thread.sleep(2000);
-	    homepage.AdbiyancardDataEntry();
+	    homepage.AbhiyancardvibhagDataEntry();
 	}
 
 //	@When("User lands on dataentry selection")
@@ -79,7 +80,7 @@ public class AbhiyanDataEntrySteps {
 
 
 	@Then("User enters the data")
-	public void user_enters_the_data(DataTable vibhagdata) throws InterruptedException, ParseException {
+	public void user_enters_the_data() throws InterruptedException, ParseException {
 //		List<Map<String,String>> user= vibhagdata.asMaps(String.class,String.class);
 //		String Name = user.get(0).get("Name");
 //		String FatherName = user.get(0).get("FatherName");
@@ -88,21 +89,19 @@ public class AbhiyanDataEntrySteps {
 //		String primaryNumber = user.get(0).get("primaryNumber");
 //		Name,FatherName,Age,phoneNumber,primaryNumber
 
-	  homepage.AbhiyanDataSearch();
+	  homepage.AbhiyanVibhagDataEntry();
 	  List<String> Genrated = DataList.getStringList();
 	  System.out.println("List of generated strings:");
       for (String str : Genrated) {System.out.println(str); }
 	  Thread.sleep(3000);
 
 	  homepage.dataverifcation();
-	
-	
+
 	  List<String> Fetched = DataList.getStringList();
 	  System.out.println("List of Fetched strings:");
       for (String str : Fetched) {
           System.out.println(str);
       }
-	  
 	  boolean areEqual = Genrated.equals(Fetched);
 
       // Print the result of the comparison
@@ -111,30 +110,27 @@ public class AbhiyanDataEntrySteps {
       } else {
           System.out.println("The two ArrayLists are not equal.");
       }
-      
 //      Assert.assertEquals(areEqual, true);
-
 	}
-	@When("User click on Abhiyanpradesh Data Entry")
-
-	public void User_click_on_Abhiyanpradesh_Data_Entry() throws InterruptedException {
-		homepage.AdbiyancardpradeshDataEntry();
+	@When("User click on Abhiyan Pradesh Data Entry")
+	public void User_click_on_Abhiyan_Pradesh_Data_Entry() throws InterruptedException {
+		homepage.AbhiyancardpradeshDataEntry();
 
 	}
 
-	@Then("User Ennters pradesh Data entry")
-	public void User_Ennters_pradesh_Data_entry() throws ParseException, InterruptedException {
+	@Then("User Enters Abhiyan Pradesh Data entry")
+	public void User_Enters_Abhiyan_Pradesh_Data_entry() throws ParseException, InterruptedException {
 		homepage.AbhiyanPradeshDataEntry();
 	}
-	@When("User click on Loksabha Data Entry")
+	@When("User click on Abhiyan Loksabha Data Entry")
 
-	public void User_click_on_Loksabha_Data_Entry() throws InterruptedException {
-		homepage.AdbiyancardloksabhaDataEntry();
+	public void User_click_on_Abhiyan_Loksabha_Data_Entry() throws InterruptedException {
+		homepage.AbhiyancardloksabhaDataEntry();
 
 	}
 
-	@Then("User Ennters Loksabha Data entry")
-	public void User_Ennters_Loksabha_Data_entry() throws ParseException, InterruptedException {
+	@Then("User Enters Abhiyan Loksabha Data entry")
+	public void User_Enters_Abhiyan_Loksabha_Data_entry() throws ParseException, InterruptedException {
 		homepage.AbhiyanLoksabhaDataEntry();
 
 	}

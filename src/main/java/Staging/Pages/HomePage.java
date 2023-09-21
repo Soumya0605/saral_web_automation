@@ -33,10 +33,19 @@ public class HomePage {
 		return driver.getTitle();
 	}
 
-	public ProfilePage ProfileSection() throws InterruptedException {
-		ElementUtils.clickElementByLocator(driver, ProfilIcon, wait);
-		return new ProfilePage(driver);
+//	public ProfilePage ProfileSection() throws InterruptedException {
+//		ElementUtils.clickElementByLocator(driver, ProfilIcon, wait);
+//		return new ProfilePage(driver);
+//	}
+	public void ProfileSectionDropdown() throws InterruptedException {
+		ElementUtils.clickElementByLocator(driver, ProfileIconDropDown, wait);
 	}
+	public ProfilePage ProfileButton() throws InterruptedException {
+		ElementUtils.clickElementByLocator(driver, ProfileButton, wait);
+		return new ProfilePage(driver);
+    }
+
+
 
 
 
@@ -48,7 +57,7 @@ public class HomePage {
 		ElementUtils.clickElementByLocator(driver, AddEntry, wait);
 	}
 	//
-	public void AbhiyanDataSearch() throws InterruptedException, ParseException {
+	public void AbhiyanVibhagDataEntry() throws InterruptedException, ParseException {
 
 		filterlist= new DataList();
 		listinput=new DataList();
@@ -550,19 +559,19 @@ public class HomePage {
 		Thread.sleep(1000);
 
 	}
-	public void AdbiyancardDataEntry() throws InterruptedException{
+	public void AbhiyancardvibhagDataEntry() throws InterruptedException{
 		ElementUtils.clickElementByLocator(driver,AbhiyanCard,wait);
 //		roleVerification();
 		ElementUtils.clickElementByLocator(driver,VibhagLevel,wait);
 
 	}
-	public void AdbiyancardpradeshDataEntry() throws InterruptedException{
+	public void AbhiyancardpradeshDataEntry() throws InterruptedException{
 		ElementUtils.clickElementByLocator(driver,AbhiyanCard,wait);
 //		roleVerification();
 		ElementUtils.clickElementByLocator(driver,PradeshDatalevel,wait);
 
 	}
-	public void AdbiyancardloksabhaDataEntry() throws InterruptedException{
+	public void AbhiyancardloksabhaDataEntry() throws InterruptedException{
 		ElementUtils.clickElementByLocator(driver,AbhiyanCard,wait);
 //		roleVerification();
 		ElementUtils.clickElementByLocator(driver,LoksabhaLevel,wait);

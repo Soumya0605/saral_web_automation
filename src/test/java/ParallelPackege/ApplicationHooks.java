@@ -25,17 +25,13 @@ public class ApplicationHooks {
 	public void getProperty() throws IOException {
 		configreader = new ConfigReader();
 		prop = configreader.in_itprop();
-
 	}
-
 	@Before(order = 1)
 	public void launchbrowser() throws IOException {
 		String BrowserName = prop.getProperty("browser");
 		driverFactory = new DriverFactory();
 		driver = driverFactory.initializeBrowser(BrowserName);
-
 	}
-
 	@After(order = 0)
 	public void quitBrowser() {
 		driver.quit();

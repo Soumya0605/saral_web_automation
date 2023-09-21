@@ -10,7 +10,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
  
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src\\src\\test\\resurces\\ParallelPackege"},
+        features = {"src\\src\\test\\resources\\ParallelPackege"},
 		glue = {"ParallelPackege"},
 		monochrome = true,
 		publish = true,

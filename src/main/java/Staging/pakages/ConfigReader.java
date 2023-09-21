@@ -9,7 +9,7 @@ private Properties prop;
 public Properties in_itprop() throws IOException {
 	prop =new Properties();
 	try {
-	FileInputStream ip = new FileInputStream("src/src/test/resurces/Satging/config/StagingConfig.properties");
+	FileInputStream ip = new FileInputStream("src/main/java/resources/config/StagingConfig.properties");
 	prop.load(ip);
 	}catch(FileNotFoundException e) {
 		e.printStackTrace();

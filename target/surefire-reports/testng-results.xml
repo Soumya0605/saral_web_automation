@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-21T11:53:31 IST" name="Surefire suite" finished-at="2023-09-21T11:55:10 IST" duration-ms="98814">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-09-21T11:53:31 IST" name="Surefire test" finished-at="2023-09-21T11:55:10 IST" duration-ms="98814">
+      <class name="ParallelPackege.TestParallelRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:53:31 IST" name="setUpClass" finished-at="2023-09-21T11:53:32 IST" duration-ms="493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5db6b9cd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T11:55:08 IST" duration-ms="96419" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Chooses the Abhiyan data entry"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Homepage Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T11:53:47 IST" duration-ms="15673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login With Mobile number"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T11:54:47 IST" duration-ms="75677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Chooses the AbhiyanPradesh data entry"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Homepage Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T11:53:51 IST" duration-ms="18922" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login With Email ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Page Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T11:55:05 IST" duration-ms="93670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User Chooses the Loksabha data entry"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Homepage Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:53:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-09-21T11:53:54 IST" duration-ms="22171" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Profile page section"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Homepage Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:ParallelPackege.TestParallelRunner@942a29c]" started-at="2023-09-21T11:55:08 IST" name="tearDownClass" finished-at="2023-09-21T11:55:10 IST" duration-ms="1862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- ParallelPackege.TestParallelRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

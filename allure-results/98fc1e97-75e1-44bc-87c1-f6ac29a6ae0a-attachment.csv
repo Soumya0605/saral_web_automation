@@ -1,0 +1,2 @@
+EmailID	Password		Otp_String	otp
+statemager12@gmail.com	Test@123		//input[@type='password']	010203

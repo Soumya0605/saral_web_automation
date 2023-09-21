@@ -1,0 +1,19 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">-->
+<!--<suite name="Suite" parallel="tests" thread-count="3">-->
+<!--    <test name="WardKaryakartaDataEntryTest" parallel="methods">-->
+<!--        <classes>-->
+<!--            <class name="sangathan_runner.wardKaryakartaRunner"></class>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="PradeshDataEntryTest" parallel="methods">-->
+<!--        <classes>-->
+<!--            <class name="sangathan_runner.pradeshKaryakartaRunner"></class>-->
+<!--        </classes>-->
+<!--    </test> &lt;!&ndash; Test &ndash;&gt;-->
+<!--    <test name="AbhiyanDataEntryTest" parallel="methods">-->
+<!--        <classes>-->
+<!--            <class name="stepdefination_runner.Runner"></class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite> &lt;!&ndash; Suite &ndash;&gt;-->
